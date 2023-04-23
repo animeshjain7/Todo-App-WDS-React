@@ -1,9 +1,11 @@
 import './App.css';
+import Todo from './Todo App/todo';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <Todo></Todo>
+      {/* <header className="App-header">
         <img src="Octocat.png" className="App-logo" alt="logo" />
         <p>
           GitHub Codespaces <span className="heart">♥️</span> React
@@ -21,7 +23,7 @@ function App() {
             Learn React
           </a>
         </p>
-      </header>
+      </header> */}
     </div>
   );
 }
