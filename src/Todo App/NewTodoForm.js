@@ -18,7 +18,7 @@ export default function NewTodoForm({ addTodo }) {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="form">
         <input
           type="text"
           onChange={handleChange}
