@@ -7,9 +7,10 @@ export default function TodoList({ todos, toggleTodo, deleteTodo }) {
       {todos.map((it) => {
         return (
           <TodoItem
-          title={it.title}
-          id ={it.id}
-          completed = {it.completed}
+            // title={it.title}
+            // id={it.id}
+            // completed={it.completed}
+            {...it}
             toggleTodo={toggleTodo}
             deleteTodo={deleteTodo}
             key={it.id}

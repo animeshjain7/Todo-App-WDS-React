@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function NewTodoForm({ onSubmit }) {
+export default function NewTodoForm({ addTodo }) {
   const [newItem, setNewItem] = useState("");
 
   function handleChange(r) {
@@ -11,7 +11,7 @@ export default function NewTodoForm({ onSubmit }) {
     e.preventDefault();
     if (newItem === "") return;
 
-    onSubmit(newItem);
+    addTodo(newItem);
 
     setNewItem("");
   }

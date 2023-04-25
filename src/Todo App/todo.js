@@ -27,15 +27,15 @@ export default function Todo() {
 
   function deleteTodo(id) {
     setTodos((currentTodos) => {
-      return currentTodos.filter((it) => it.id !== id);
+      return currentTodos.filter((todo) => todo.id !== id);
     });
   }
   return (
     <>
       <h1>TODO App</h1>
-      <NewTodoForm onSubmit={addTodo} />
+      <NewTodoForm addTodo={addTodo}/>
       <h3>List</h3>
-      <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo}  ></TodoList>
+      <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo}/>
     </>
   );
 }
