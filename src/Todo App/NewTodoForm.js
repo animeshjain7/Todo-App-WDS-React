@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './style.css';
 
 export default function NewTodoForm({ addTodo }) {
   const [newItem, setNewItem] = useState("");
@@ -18,8 +19,9 @@ export default function NewTodoForm({ addTodo }) {
 
   return (
     <>
-      <form onSubmit={handleSubmit} className="form">
+      <form onSubmit={handleSubmit} className="form-tag">
         <input
+        className="input-tag"
           type="text"
           onChange={handleChange}
           value={newItem}
