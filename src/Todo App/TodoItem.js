@@ -1,15 +1,26 @@
-export default function TodoItem({completed, id, title, toggleTodo, deleteTodo}) {
+import "./style.css";
+
+export default function TodoItem({
+  completed,
+  id,
+  title,
+  toggleTodo,
+  deleteTodo,
+}) {
   return (
-    <li>
-      <label>
-        <input
-          type="checkbox"
-          checked={completed}
-          onChange={(e) => toggleTodo(id, e.target.checked)}
-        />
-        {title}
+    <li className="li-tag">
+      <input
+        id={id}
+        type="checkbox"
+        checked={completed}
+        onChange={(e) => toggleTodo(id, e.target.checked)}
+      />
+      <label htmlFor={id}>
+        <div className="content-list">{title}</div>
       </label>
-      <button onClick={() => deleteTodo(id)}>Delete</button>
+      <button className="button-delete" onClick={() => deleteTodo(id)}>
+        Delete
+      </button>
     </li>
   );
 }

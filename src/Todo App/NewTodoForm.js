@@ -27,7 +27,7 @@ export default function NewTodoForm({ addTodo }) {
           value={newItem}
           placeholder="Add Item"
         />
-        <button type="submit">Add</button>
+        <button type="submit" className="button-add"> Add </button>
       </form>
     </>
   );

@@ -1,28 +1,93 @@
-.form-tag{
-display: flex;
-justify-content: center;
-}
-.input-tag{
-    background-color: plum;
-    margin-right: 10px;
-    border:5px solid;
-    border-radius: 10px;
-    height: 40px;
-    width:270px;
-    animation: mymove 5s infinite;
-}
-@keyframes mymove {
-    20%{ border-color: violet;}
-    40% {border-color: orange;}
-    60%{ border-color: blue;}
-    80%{ border-color: green;}
-    100%{ border-color: yellow;}
-
-  }
-.input-tag:hover{
-   background-color: whitesmoke;
+:root {
+  --button-blue: #1e90ff;
+  --white: #ffffff;
+  --button-red: #dc3545;
 }
 
-button{
+.form-tag {
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  align-content: center;
+  flex-wrap: wrap;
+}
 
+.input-tag {
+  background-color: #81afd7;
+  margin: 10px;
+  border-radius: 0.5em;
+  min-height: 2rem;
+  font-size: medium;
+  text-align: center;
+  border: 2px solid black;
+}
+::placeholder {
+  color: #f8f9fa;
+}
+
+.input-tag:focus {
+  outline: none;
+  border: 2px solid greenyellow;
+}
+
+h1 {
+  color: whitesmoke;
+  font-style: normal;
+  font-weight: 400;
+  /* background-color: white; */
+  padding: 2%;
+  text-align: center;
+}
+
+.button-add {
+  outline: none;
+  border: 2px solid #007bff;
+  text-transform: uppercase;
+  background-color: var(--button-blue);
+  border-radius: 0.25rem;
+  padding: 1em 2em;
+  margin: 10px;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.button-add:hover {
+  border: 2px solid #4caf50;
+}
+.button-delete {
+  margin:2px 0 2px 0;
+  height: 20px;
+  background-color: var(--button-red);
+  border: 1px solid red;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+.ul-tag {
+  padding: 0;
+  margin: 2px;
+  text-align: center;
+}
+
+.li-tag {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid green; */
+  line-height: 1px;
+  margin: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.content-list {
+  color: #28a746;
+  text-align: center;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
 }

@@ -1,8 +1,9 @@
 import TodoItem from "./TodoItem";
+import './style.css';
 
 export default function TodoList({ todos, toggleTodo, deleteTodo }) {
   return (
-    <ul>
+    <ul className="ul-tag">
       {todos.length === 0 && "No Items"}
       {todos.map((it) => {
         return (
