@@ -11,7 +11,6 @@ export default function TodoItem({
     <li className="li-tag">
       <input
         id={id}
-        className="checkbox-input"
         type="checkbox"
         checked={completed}
         onChange={(e) => toggleTodo(id, e.target.checked)}

@@ -63,6 +63,7 @@ h1 {
   text-align: center;
   font-weight: 600;
   border-radius: 0.25rem;
+  cursor: pointer;
 }
 .ul-tag {
   padding: 0;
@@ -74,19 +75,19 @@ h1 {
   list-style-type: none;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  border: 1px solid green;
+  justify-content: space-between;
+  /* border: 1px solid green; */
   line-height: 1px;
   margin: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .content-list {
+  color: #28a746;
   text-align: center;
-  display: inline-block;
+  display: inline;
   justify-content: center;
   align-items: center;
-  /* margin: 2rem; */
-  /* width: 100px; */
-  /* height: 40px; */
-  background-color: white;
+  /* border: 1px solid red; */
 }
