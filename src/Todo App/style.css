@@ -1,13 +1,13 @@
 :root {
   --button-blue: #1e90ff;
   --white: #ffffff;
-  --button-red:#dc3545;
+  --button-red: #dc3545;
 }
 
 .form-tag {
   padding: 2px;
-  display: flex; 
-  justify-content:center;
+  display: flex;
+  justify-content: center;
   /* align-items: center; */
   align-content: center;
   flex-wrap: wrap;
@@ -18,17 +18,17 @@
   margin: 10px;
   border-radius: 0.5em;
   min-height: 2rem;
-  font-size:medium;
+  font-size: medium;
   text-align: center;
   border: 2px solid black;
 }
-::placeholder{
+::placeholder {
   color: #f8f9fa;
 }
 
-.input-tag:focus{
+.input-tag:focus {
   outline: none;
-  border:2px solid greenyellow;
+  border: 2px solid greenyellow;
 }
 
 h1 {
@@ -46,22 +46,47 @@ h1 {
   text-transform: uppercase;
   background-color: var(--button-blue);
   border-radius: 0.25rem;
-  padding:1em 2em;
+  padding: 1em 2em;
   margin: 10px;
   font-size: 13px;
   cursor: pointer;
   font-weight: 700;
 }
-.button-add:hover{
-  border: 2px solid #4CAF50 ;
+.button-add:hover {
+  border: 2px solid #4caf50;
+}
+.button-delete {
+  margin:2px 0 2px 0;
+  height: 20px;
+  background-color: var(--button-red);
+  border: 1px solid red;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 0.25rem;
+}
+.ul-tag {
+  padding: 0;
+  margin: 2px;
+  text-align: center;
 }
 
-
-.list-tag{
+.li-tag {
   list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid green;
+  line-height: 1px;
+  margin: 10px;
 }
 
-.button-delete{
-  outline: none;
-  background-color:var(--button-red) ;
+.content-list {
+  text-align: center;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  /* margin: 2rem; */
+  /* width: 100px; */
+  /* height: 40px; */
+  background-color: white;
 }
