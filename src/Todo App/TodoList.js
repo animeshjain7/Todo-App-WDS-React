@@ -3,7 +3,7 @@ import './style.css';
 
 export default function TodoList({ todos, toggleTodo, deleteTodo }) {
   return (
-    <ul className="list-tag">
+    <ul className="ul-tag">
       {todos.length === 0 && "No Items"}
       {todos.map((it) => {
         return (
