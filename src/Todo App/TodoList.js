@@ -1,23 +1,20 @@
-import TodoItem from "./TodoItem";
-import './style.css';
+// TodoList.js
+import React from 'react';
+import TodoItem from './TodoItem';
 
-export default function TodoList({ todos, toggleTodo, deleteTodo }) {
+export default function TodoList({ todos, toggleTodo, deleteTodo, editTodo }) {
   return (
     <ul className="ul-tag">
       {todos.length === 0 && "No Items"}
-      {todos.map((it) => {
-        return (
-          <TodoItem
-            // title={it.title}
-            // id={it.id}
-            // completed={it.completed}
-            {...it}
-            toggleTodo={toggleTodo}
-            deleteTodo={deleteTodo}
-            key={it.id}
-          />
-        );
-      })}
+      {todos.map((it) => (
+        <TodoItem
+          {...it}
+          toggleTodo={toggleTodo}
+          deleteTodo={deleteTodo}
+          editTodo={editTodo}
+          key={it.id}
+        />
+      ))}
     </ul>
   );
 }

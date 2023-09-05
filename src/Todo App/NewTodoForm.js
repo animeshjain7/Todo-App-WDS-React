@@ -1,19 +1,21 @@
 import { useState } from "react";
-import './style.css';
 
-export default function NewTodoForm({ addTodo }) {
+export default function NewTodoForm({ addTodo, editableTodo }) {
   const [newItem, setNewItem] = useState("");
 
-  function handleChange(r) {
-    setNewItem(r.target.value);
+ 
+
+  function handleChange(e) {
+    setNewItem(e.target.value);
   }
 
   function handleSubmit(e) {
     e.preventDefault();
+
     if (newItem === "") return;
 
     addTodo(newItem);
-
+    
     setNewItem("");
   }
 
@@ -21,13 +23,15 @@ export default function NewTodoForm({ addTodo }) {
     <>
       <form onSubmit={handleSubmit} className="form-tag">
         <input
-        className="input-tag"
+          className="input-tag"
           type="text"
           onChange={handleChange}
           value={newItem}
           placeholder="Add Item"
         />
-        <button type="submit" className="button-add"> Add </button>
+        <button type="submit" className="button-add">
+           Add
+        </button>
       </form>
     </>
   );
